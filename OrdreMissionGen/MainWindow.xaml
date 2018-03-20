@@ -1,0 +1,114 @@
+﻿<Window x:Class="OrdreMissionGen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrdreMissionGen"
+        mc:Ignorable="d"
+        Title="تكليف بمهمة" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        
+        >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="560*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/Background_SG.png" Stretch="Uniform"></ImageBrush>
+        </Grid.Background>
+
+        <TextBox x:Name="MissionNumber"   HorizontalAlignment="Left" Height="23" Margin="240,105,0,0" TextWrapping="Wrap" Text="رقم" VerticalAlignment="Top" Width="382" TextAlignment="Right" GotFocus="MissionNumber_GotFocus" IsKeyboardFocusedChanged="MissionNumber_IsKeyboardFocusedChanged">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="MissionNom" HorizontalAlignment="Left" Height="23" Margin="432,133,0,0" TextWrapping="Wrap" Text="اللقب" VerticalAlignment="Top" Width="190" TextAlignment="Right" GotFocus="MissionNom_GotFocus" IsKeyboardFocusedChanged="MissionNom_IsKeyboardFocusedChanged">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="MissionPrenom" HorizontalAlignment="Left" Height="23" Margin="240,133,0,0" TextWrapping="Wrap" Text="الاسم" VerticalAlignment="Top" Width="190" TextAlignment="Right" GotFocus="MissionPrenom_GotFocus" IsKeyboardFocusedChanged="MissionPrenom_IsKeyboardFocusedChanged">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="MissionPoste" HorizontalAlignment="Left" Height="23" Margin="240,161,0,0" TextWrapping="Wrap" Text="الوظيفة" VerticalAlignment="Top" Width="382" TextAlignment="Right" GotFocus="MissionPoste_GotFocus" IsKeyboardFocusedChanged="MissionPoste_IsKeyboardFocusedChanged">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="MissionAdresse" HorizontalAlignment="Left" Height="23" Margin="240,189,0,0" TextWrapping="Wrap" Text="السكن" VerticalAlignment="Top" Width="382" TextAlignment="Right" GotFocus="MissionAdresse_GotFocus" IsKeyboardFocusedChanged="MissionAdresse_IsKeyboardFocusedChanged">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="LieuMission" HorizontalAlignment="Left" Height="54" Margin="240,217,0,0" TextWrapping="Wrap" Text="يسافر إلى" VerticalAlignment="Top" Width="362" TextAlignment="Right" GotFocus="LieuMission_GotFocus" IsKeyboardFocusedChanged="LieuMission_IsKeyboardFocusedChanged">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="MotifMission" HorizontalAlignment="Left" Height="23" Margin="240,286,0,0" TextWrapping="Wrap" Text="سبب السفر" VerticalAlignment="Top" Width="347" TextAlignment="Right" GotFocus="MotifMission_GotFocus" IsKeyboardFocusedChanged="MotifMission_IsKeyboardFocusedChanged">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="MoyenTransport" HorizontalAlignment="Left" Height="23" Margin="240,319,0,0" TextWrapping="Wrap" Text="إمكانيات النقل" VerticalAlignment="Top" Width="324" TextAlignment="Right" GotFocus="MoyenTransport_GotFocus" IsKeyboardFocusedChanged="MoyenTransport_IsKeyboardFocusedChanged">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <DatePicker x:Name="DateSortieEnMission" HorizontalAlignment="Left" Margin="443,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.176,0.708" SelectedDateFormat="Short" Text="تاريخ الخروج" Width="140">
+            <DatePicker.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,0" Opacity="0" StartPoint="0.5,1">
+                    <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.375"/>
+                    <GradientStop Color="#FF617584" Offset="1"/>
+                </LinearGradientBrush>
+            </DatePicker.BorderBrush>
+        </DatePicker>
+        <DatePicker x:Name="DateEntreeDeMission" HorizontalAlignment="Left" Margin="147,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.196,0.5" Width="140">
+            <DatePicker.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,0" Opacity="0" StartPoint="0.5,1">
+                    <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.375"/>
+                    <GradientStop Color="#FF617584" Offset="1"/>
+                </LinearGradientBrush>
+            </DatePicker.BorderBrush>
+        </DatePicker>
+        <TextBox x:Name="TypeIdentite" HorizontalAlignment="Left" Height="23" Margin="240,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" TextAlignment="Right" Text="نوع وصفة التعريف" GotFocus="TypeIdentite_GotFocus" IsKeyboardFocusedChanged="TypeIdentite_IsKeyboardFocusedChanged">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <DatePicker x:Name="DateSignature" HorizontalAlignment="Left" Margin="137,438,0,0" VerticalAlignment="Top" Width="140">
+            <DatePicker.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,0" Opacity="0" StartPoint="0.5,1">
+                    <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.375"/>
+                    <GradientStop Color="#FF617584" Offset="1"/>
+                </LinearGradientBrush>
+            </DatePicker.BorderBrush>
+        </DatePicker>
+        <Button x:Name="BtnRemplir" Content="ملء و طبع" HorizontalAlignment="Left" Margin="420,512,0,0" VerticalAlignment="Top" Width="75" Click="BtnRemplir_Click"/>
+        <Button x:Name="BtnReset" Content="تفريغ" HorizontalAlignment="Left" Margin="340,512,0,0" VerticalAlignment="Top" Width="75" Click="BtnReset_Click"/>
+        <Image HorizontalAlignment="Left" Height="174" Margin="5,434,0,-37" VerticalAlignment="Top" Width="174" Source="Images/cse_hq.png" Grid.RowSpan="2" >
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Images/cse_hq.png"/>
+            </Image.OpacityMask>
+
+        </Image>
+        <Image HorizontalAlignment="Left" Height="83" VerticalAlignment="Top" Width="83" Margin="698,490,0,-2" Source="Images/ESI.png" RenderTransformOrigin="0.617,1.517" Grid.RowSpan="2">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Images/ESI.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button Content="حول التطبيق" HorizontalAlignment="Left" Margin="260,512,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>

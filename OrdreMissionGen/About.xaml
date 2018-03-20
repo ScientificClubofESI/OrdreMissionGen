@@ -1,0 +1,49 @@
+﻿<Window x:Class="OrdreMissionGen.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrdreMissionGen"
+        mc:Ignorable="d"
+        Title="About" Height="400" Width="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Opacity="0.9" Height="308" Width="410">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="160*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="Images/cse_hq.png" Stretch="UniformToFill"/>
+                    </Grid.Background>
+                </Grid>
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBlock x:Name="textBlock"  HorizontalAlignment="Center" Height="162" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Width="390" Margin="0"><Run Text="Cette application a été développé par REMACHE Amine Riad - 2CS-SIQ (2017/2018), membre du Club Scientifique de l'ESI - CSE, dans le but d'informatiser le processus d'affectation des missions aux employés pour la secrétariat générale de l'ESI. "/><LineBreak/><Run/><LineBreak/><Run Text="Contact" TextDecorations="Underline"/><Run Text=" :"/><LineBreak/><Run Text=" "/><LineBreak/><Run Text="cse@esi.dz  "/><LineBreak/><Run Text="ea_remache@esi.dz "/><LineBreak/><Run Text="linkedin.com/in/remache-amine  "/></TextBlock>
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

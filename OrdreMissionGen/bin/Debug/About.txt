@@ -1,0 +1,7 @@
+Cette application a ete developpee par REMACHE Amine Riad - 2CS-SIQ (2017/2018), membre du Club Scientifique de l'ESI - CSE, dans le but d'informatiser le processus d'affectation des missions aux employees pour la secretariat generale de l'ESI. 
+
+Contact :  
+
+cse@esi.dz  
+ea_remache@esi.dz 
+https://www.linkedin.com/in/remache-amine  
